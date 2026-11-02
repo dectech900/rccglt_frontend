@@ -49,15 +49,6 @@ export default function WelcomeSection() {
               </div>
             </div>
 
-            {/* Stats badges */}
-            <div className="absolute -top-4 -right-4 bg-gold-500 text-black rounded-2xl px-5 py-3 shadow-lg">
-              <p className="font-bold text-2xl leading-none">15+</p>
-              <p className="text-xs font-medium">Years of Ministry</p>
-            </div>
-            <div className="absolute -bottom-4 -left-4 bg-primary-700 text-white rounded-2xl px-5 py-3 shadow-lg">
-              <p className="font-bold text-2xl leading-none">800+</p>
-              <p className="text-xs font-medium">Church Family</p>
-            </div>
           </div>
         </div>
       </div>
