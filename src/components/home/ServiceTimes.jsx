@@ -18,17 +18,17 @@ export default function ServiceTimes() {
           Join us for any of our weekly services. All services are held at our main auditorium unless otherwise stated.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 lg:gap-4">
           {services.map((s, i) => (
             <div
               key={i}
-              className="bg-white/8 border border-white/12 rounded-2xl p-6 text-center hover:bg-white/15 hover:border-gold-500/40 transition-all duration-300 group"
+              className="bg-white/8 border border-white/12 rounded-2xl p-3 lg:p-6 text-center hover:bg-white/15 hover:border-gold-500/40 transition-all duration-300 group"
             >
-              <div className="text-3xl mb-3">{s.icon}</div>
-              <p className="text-gold-400 text-xs font-semibold uppercase tracking-wider mb-1">{s.day}</p>
-              <p className="text-white font-serif font-semibold text-base mb-1">{s.label}</p>
-              <p className="text-white font-bold text-2xl mb-3 group-hover:text-gold-400 transition-colors">{s.time}</p>
-              <p className="text-white/45 text-xs leading-snug">{s.desc}</p>
+              <div className="text-xl lg:text-3xl mb-1.5 lg:mb-3">{s.icon}</div>
+              <p className="text-gold-400 text-[10px] lg:text-xs font-semibold uppercase tracking-wider mb-0.5 lg:mb-1">{s.day}</p>
+              <p className="text-white font-serif font-semibold text-xs lg:text-base mb-0.5 lg:mb-1">{s.label}</p>
+              <p className="text-white font-bold text-base lg:text-2xl mb-1.5 lg:mb-3 group-hover:text-gold-400 transition-colors">{s.time}</p>
+              <p className="text-white/45 text-[10px] lg:text-xs leading-snug hidden sm:block">{s.desc}</p>
             </div>
           ))}
         </div>

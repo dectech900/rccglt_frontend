@@ -107,12 +107,11 @@ export default function UpcomingEventsPreview() {
           </div>
 
           {/* Right — photo */}
-          <div className="hidden lg:block sticky top-24 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="mt-8 lg:mt-0 rounded-3xl overflow-hidden shadow-2xl lg:sticky lg:top-24">
             <img
               src={eventPhoto}
               alt="Church gathering"
-              className="w-full object-cover"
-              style={{ height: '640px' }}
+              className="w-full object-cover h-56 sm:h-72 lg:h-[640px]"
             />
           </div>
 
